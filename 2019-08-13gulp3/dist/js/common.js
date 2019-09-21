@@ -1,0 +1,1 @@
+var common={_url:"http://localhost:3000",check:function(t,n,e,o,c){""==n?t.next().show().text(o):e.test(n)?t.next().hide():t.next().show().text(c)},http:function(t,n,e,o){$.ajax({type:t,url:this._url+n,async:!0,data:e,dataType:"json",success:function(t){o(res)},error:function(t){o(t)}})}};
